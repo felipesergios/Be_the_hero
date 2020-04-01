@@ -1,5 +1,5 @@
 const connection = require('../database/connection')
-import generateId from '../utils/generateUniqueID'
+const  generateId = require( '../utils/generateUniqueID')
 module.exports = {
     async show(request,response){
         const ongs = await connection('ongs').select('*');
